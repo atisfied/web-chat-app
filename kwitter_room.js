@@ -12,9 +12,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-user_name = localStorage.getItem("Username");
-document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";
-
 function addroom() {
          room_name = document.getElementById("room_name").value;
 
@@ -34,3 +31,7 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
   //End code
   });});}
 getData();
+
+function logout() {
+  window.location = "index.html";
+}

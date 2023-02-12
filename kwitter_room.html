@@ -15,11 +15,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter_room.js"></script>
 
 </head>
 <body>
 <div class="container">
-<button id="logout" class="glyphicon glyphicon-log-out btn btn-link" style="background-color: rgb(156, 70, 70); border-radius: 20px;">Logout</button>
+<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-link" style="background-color: rgb(156, 70, 70); border-radius: 20px;">Logout</button>
 	<center>
 		<h1 class="header">	
 			Kwitter
@@ -27,7 +28,7 @@
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white" id="welcome_user_name" style="text-decoration: underline;"></h3>
+		<h3 class="color_white" id="welcome_user_name" style="text-decoration: underline;"><script>user_name = localStorage.getItem("Username"); document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";</script></h3>
 		<div class="form-group input_div_room_page">
 			<label>#Add Room:</label>
 			<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
@@ -37,6 +38,5 @@
 	<div id="output"></div>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
 </body>
 </html>
