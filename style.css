@@ -1,0 +1,126 @@
+html, body
+{
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+body
+{
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+#style {
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75), inset 10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255, 255, 255, 0.2), inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+}
+.header img
+{
+	width: 80px;margin-left: -15px;
+}
+
+.login_div
+{
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;
+    border-radius: 15px;
+}
+
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+#logout
+{
+	font-size: 20px; float: right;
+}
+
+
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+
+.input_div_room_page
+{
+	width: 80%;
+}
+
+.input_div label
+{
+	color: white;font-size: 20px;
+}
+
+
+.input_div_message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+}
+.input_div_message_page label
+{
+	color: black;
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+}
+.color_white
+{
+	color: white
+}
+
+.user_tick
+{
+	width:20px;
+}
+.message_h4
+{
+	padding-left:5px;color:grey;
+}
+
+#style {
+    font-family: cursive;
+}
+
+#login_button {
+    transition: transform .5s ease;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+
+#login_button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+
+#room_button {
+	transition: transform .5s ease;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+	border-radius: 30px;
+}
+
+#room_button:hover {
+	transform: scale(1.1);
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+}
