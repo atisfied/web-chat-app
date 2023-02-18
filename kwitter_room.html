@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	<title>Kwitter Room</title>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +19,8 @@
 
 </head>
 <body>
-<div class="container">
-<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-link" style="background-color: rgb(156, 70, 70); border-radius: 20px;">Logout</button>
+	<div class="container">
+	<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-link" style="background-color: rgb(156, 70, 70); border-radius: 20px;">Logout</button>
 	<center>
 		<h1 class="header">	
 			Kwitter
@@ -28,7 +28,7 @@
 				<img src="m2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white" id="welcome_user_name" style="text-decoration: underline;"><script>user_name = localStorage.getItem("Username"); document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";</script></h3>
+		<h3 class="color_white" id="welcome_user_name" style="text-decoration: underline;"><script>user_name = localStorage.getItem("Username");document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";</script></h3>
 		<div class="form-group input_div_room_page">
 			<label>#Add Room:</label>
 			<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
